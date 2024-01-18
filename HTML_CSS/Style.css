@@ -1,10 +1,10 @@
 body {
-    background: #ccc;
+    background: #e0dddd
 }
 
-
-#title , .subtitle, .post_title {
-    color: blue;
+.post_image {
+    border: solid #000;
+    border-radius: 150px;
 }
 
 .post_title {
@@ -14,16 +14,30 @@ body {
     margin-bottom: 15px;
 }
 
+.stitle {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: line-through;
+    color: #000;
+}
+
 .post {
     background: #fff;
     padding: 15px 10px 5px;
-    border: 2px solid #000;
-    border-radius: 10px;
-    margin: 10px;
+    border: 2px solid #413b3b;
+    margin-bottom: 15px;
+    border-radius: 5px;
 }
 
 .post_content {
+    margin: 0;
+    margin-button: 15px;
+}
 
-margin: 0;
-margin-button: 15px;
+.post_image {
+    margin: 0;
+    margin-button: 15px;
 }
