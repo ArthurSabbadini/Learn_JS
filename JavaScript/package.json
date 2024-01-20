@@ -1,12 +1,11 @@
 {
-  "name": "learn_dio",
+  "name": "javascript",
   "version": "1.0.0",
-  "description": "Plataforma Dio, curso",
-  "main": "index.js",
+  "description": "",
+  "main": "Aula_1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC"
 }
