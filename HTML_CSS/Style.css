@@ -1,5 +1,11 @@
 body {
-    background: #e0dddd
+    background-image: url(Imagens/Fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: verdana;
+    max-width: 930px;
+    margin: auto;
 }
 
 .post_image {
@@ -34,10 +40,22 @@ a {
 
 .post_content {
     margin: 0;
-    margin-button: 15px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    text-align: left;
 }
 
 .post_image {
-    margin: 0;
-    margin-button: 15px;
+    margin-bottom: 15px;
+    width: 100px;
+}
+
+.Contacts_list {
+    list-style-type: none;
+    padding-left: 15px;
+
+}
+
+.Contacts_list lI a {
+    text-decoration: none;
 }
