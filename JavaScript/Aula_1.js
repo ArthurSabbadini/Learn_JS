@@ -10,7 +10,7 @@
 
 let var1 = 3.50;
 let var2 = 0.5;
-let var3 = 50;
+let var3 = 1000;
 let resultado = (var2 * var3) * var1;
 
-console.log(resultado);
+console.log(resultado.toFixed(2));
