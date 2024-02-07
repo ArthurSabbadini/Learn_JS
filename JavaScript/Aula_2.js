@@ -1,11 +1,11 @@
-// " % " significa resto da divisão 
+// " % " significa resto da divisão
 // uma condição (condicional) sempre retorna um boolean
 // = "atribuição", == "igualdade", === "ele é igualdade idenpendete do tipo"
 
 // Desafio aula 2
 
 // Faça um programa para calcular o valor de uma viagem.
-// Você tera 5 variaveis. sendo elas: 
+// Você tera 5 variaveis. sendo elas:
 // 1- preço do etanol
 // 2-preço da gasolina
 // 3- o tipo de combustivel do carro
@@ -14,27 +14,28 @@
 
 // imprima o valor que será gasto de combustivel para realizar esta viagem;
 
+const precoCombustivelEtanol = 5.4;
+const precoCombustivelGasolina = 4.1;
+const KmPorLitros = 7;
+const DistanciaEmKm = 100;
+let TipoCombustivel = "Etanol ";
 
-let PrecoEtanol = 5;
-let PrecoGasolina = 6;
-let TipoCombustivel;
-let GastoPorKM;
+const LitrosConsumidos = DistanciaEmKm / KmPorLitros;
 
-if (PrecoEtanol < PrecoGasolina) {
-    TipoCombustivel = 1;
-    GastoPorKM = 9.0; // Definindo o valor de GastoPorKM para Etanol
+if (TipoCombustivel === "Etanol") {
+  const ValorGasto = LitrosConsumidos * precoCombustivelEtanol;
+  console.log(
+    "Seu combustivel é " +
+      TipoCombustivel +
+      "e o valor total ficou em " +
+      ValorGasto.toFixed(2)
+  );
 } else {
-    TipoCombustivel = 2;
-    GastoPorKM = 5.5; // Definindo o valor de GastoPorKM para Gasolina
-}
-
-let DistanciaEmKM = 25;
-let GastoMedioGasolina = PrecoGasolina * GastoPorKM * DistanciaEmKM;
-let GastoMedioEtanol = PrecoEtanol * GastoPorKM * DistanciaEmKM;
-let resultado = TipoCombustivel;
-
-if (resultado === 1) {
-    console.log('Seu tipo de combustivel é o Etanol e seu valor é ' + GastoMedioEtanol);
-} else if (resultado === 2) {
-    console.log('Seu tipo de combustível é a Gasolina e seu valor é ' + GastoMedioGasolina);
+  const ValorGasto = LitrosConsumidos * precoCombustivelGasolina;
+  console.log(
+    "seu combusvel é " +
+      TipoCombustivel +
+      "e o valor total ficou em " +
+      ValorGasto.toFixed(2)
+  );
 }
