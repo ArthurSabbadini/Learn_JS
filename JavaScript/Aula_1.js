@@ -8,9 +8,10 @@
 
 // imprima o valor que será gasto de combustivel para realizar esta viagem.
 
-let var1 = 3.50;
-let var2 = 0.5;
-let var3 = 1000;
-let resultado = (var2 * var3) * var1;
+const precoCombustivel = 5.40;
+const KmPorLitros = 5;
+const DistanciaEmKm = 100;
 
-console.log(resultado.toFixed(2));
+const LitrosConsumidos = DistanciaEmKm / KmPorLitros;
+const ValorGasto = LitrosConsumidos * precoCombustivel;
+    console.log('O valor que ira gastar é ' + ValorGasto);

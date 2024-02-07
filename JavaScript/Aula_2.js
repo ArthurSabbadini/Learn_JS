@@ -4,7 +4,7 @@
 
 // Desafio aula 2
 
-// Faça um prgrama para calcular o valor de uma viagem.
+// Faça um programa para calcular o valor de uma viagem.
 // Você tera 5 variaveis. sendo elas: 
 // 1- preço do etanol
 // 2-preço da gasolina
@@ -15,10 +15,26 @@
 // imprima o valor que será gasto de combustivel para realizar esta viagem;
 
 
-let PrecoEtanol = 5.00;
-let PrecoGasolina = 4.50;
-let TipoCombustivel = (PrecoEtanol = 1) (PrecoGasolina = 2);
-let DistanciaEmKM = 20;
-let GastoMedioPorKMEtanol = PrecoEtanol + DistanciaEmKM;
-let GastoMedioPorGasolina = PrecoGasolina + DistanciaEmKM;
+let PrecoEtanol = 5;
+let PrecoGasolina = 6;
+let TipoCombustivel;
+let GastoPorKM;
 
+if (PrecoEtanol < PrecoGasolina) {
+    TipoCombustivel = 1;
+    GastoPorKM = 9.0; // Definindo o valor de GastoPorKM para Etanol
+} else {
+    TipoCombustivel = 2;
+    GastoPorKM = 5.5; // Definindo o valor de GastoPorKM para Gasolina
+}
+
+let DistanciaEmKM = 25;
+let GastoMedioGasolina = PrecoGasolina * GastoPorKM * DistanciaEmKM;
+let GastoMedioEtanol = PrecoEtanol * GastoPorKM * DistanciaEmKM;
+let resultado = TipoCombustivel;
+
+if (resultado === 1) {
+    console.log('Seu tipo de combustivel é o Etanol e seu valor é ' + GastoMedioEtanol);
+} else if (resultado === 2) {
+    console.log('Seu tipo de combustível é a Gasolina e seu valor é ' + GastoMedioGasolina);
+}
