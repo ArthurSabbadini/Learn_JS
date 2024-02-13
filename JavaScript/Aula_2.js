@@ -18,7 +18,7 @@ const precoCombustivelEtanol = 6.60;
 const precoCombustivelGasolina = 4.40;
 const KmPorLitros = 7;
 const DistanciaEmKm = 100;
-let TipoCombustivel = "Etanol ";
+let TipoCombustivel = 'Etanol ';
 
 const LitrosConsumidos = DistanciaEmKm / KmPorLitros;
 
