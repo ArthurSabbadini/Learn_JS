@@ -10,11 +10,11 @@
 */  
 
 
-const nota1 = 7
-const nota2 = 5
-const nota3 = 6
+const nota1 = 2
+const nota2 = 2
+const nota3 = 2
 
-media = (nota1 + nota2 + nota3) / 3;
+const media = (nota1 + nota2 + nota3) / 3;
 
 if (media > 7) {
     console.log('você foi aprovado e sua media é ' + media.toFixed(1));
@@ -23,3 +23,4 @@ if (media > 7) {
 }else {
     console.log('Você foi reprovado e sua media é ' + media.toFixed(1));
 }
+
