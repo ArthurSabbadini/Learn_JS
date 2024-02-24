@@ -14,11 +14,11 @@
 
 // imprima o valor que será gasto de combustivel para realizar esta viagem;
 
-const precoCombustivelEtanol = 6.60;
-const precoCombustivelGasolina = 4.40;
+const precoCombustivelEtanol = 6.6;
+const precoCombustivelGasolina = 4.4;
 const KmPorLitros = 7;
 const DistanciaEmKm = 100;
-let TipoCombustivel = 'Etanol ';
+let TipoCombustivel = "Etanol ";
 
 const LitrosConsumidos = DistanciaEmKm / KmPorLitros;
 
@@ -39,4 +39,3 @@ if (TipoCombustivel === "Etanol") {
       ValorGasto.toFixed(2)
   );
 }
-
