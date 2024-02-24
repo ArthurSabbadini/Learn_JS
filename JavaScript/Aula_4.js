@@ -15,26 +15,25 @@ entre 30 e 40 obeso;
 acima de 40 obesidade grave;
 */
 
-const peso = 92;
-const altura = 1.85;
+const peso = 60;
+const altura = 1.68;
 
-const IMC = (altura * altura) / peso;
+const IMC = peso / Math.pow(altura, 2);
 
 if (IMC > 40) {
   console.log(
-    IMC.toFixed(2) +
-      " Você está imensa (obesidade grave), Procure um medico urgente!"
-  );
+    IMC.toFixed(2) + " Essa é sua massa corporal, Você está imensa, Procure um medico urgente! (obesidade grave)");
 } else if (IMC > 30 && IMC < 40) {
   console.log(
-    IMC.toFixed(2) + " Você está quase imensa (obesa), procure um medico"
-  );
+    IMC.toFixed(2) + " Essa é sua massa corporal, você está quase imensa, procure um medico! (obesa)");
 } else if (IMC > 25 && IMC < 30) {
-  console.log(IMC.toFixed(2) + " Está gorda (acima do peso), vá se tratar");
+  console.log(
+    IMC.toFixed(2) + " Essa é sua massa corporal, Está gorda, vá se tratar! (acima do peso)");
 } else if (IMC.toFixed(2) > 18.5 && IMC < 25) {
-  console.log(IMC.toFixed(2) + " Tudo normal (peso normal), Liberado !");
+  console.log(
+    IMC.toFixed(2) + " Essa é sua massa corporal, Tudo normal, Liberado! (peso normal)");
 } else {
   console.log(
-    IMC.toFixed(2) + " Está uma vareta (abaixo do peso), coma mais !"
+    IMC.toFixed(2) + " Essa é sua massa corporal, Está uma vareta, coma mais! (abaixo do peso)"
   );
 }
