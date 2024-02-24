@@ -22,18 +22,27 @@ const IMC = peso / Math.pow(altura, 2);
 
 if (IMC > 40) {
   console.log(
-    IMC.toFixed(2) + " Essa é sua massa corporal, Você está imensa, Procure um medico urgente! (obesidade grave)");
+    IMC.toFixed(2) +
+      " Essa é sua massa corporal, Você está imensa, Procure um medico urgente! (obesidade grave)"
+  );
 } else if (IMC > 30 && IMC < 40) {
   console.log(
-    IMC.toFixed(2) + " Essa é sua massa corporal, você está quase imensa, procure um medico! (obesa)");
+    IMC.toFixed(2) +
+      " Essa é sua massa corporal, você está quase imensa, procure um medico! (obesa)"
+  );
 } else if (IMC > 25 && IMC < 30) {
   console.log(
-    IMC.toFixed(2) + " Essa é sua massa corporal, Está gorda, vá se tratar! (acima do peso)");
+    IMC.toFixed(2) +
+      " Essa é sua massa corporal, Está gorda, vá se tratar! (acima do peso)"
+  );
 } else if (IMC.toFixed(2) > 18.5 && IMC < 25) {
   console.log(
-    IMC.toFixed(2) + " Essa é sua massa corporal, Tudo normal, Liberado! (peso normal)");
+    IMC.toFixed(2) +
+      " Essa é sua massa corporal, Tudo normal, Liberado! (peso normal)"
+  );
 } else {
   console.log(
-    IMC.toFixed(2) + " Essa é sua massa corporal, Está uma vareta, coma mais! (abaixo do peso)"
+    IMC.toFixed(2) +
+      " Essa é sua massa corporal, Está uma vareta, coma mais! (abaixo do peso)"
   );
 }
