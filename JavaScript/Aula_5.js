@@ -10,7 +10,7 @@ Codigo condição de pagamento:
 */
 
 const Produto = 100;
-const FormarDePagamento = "credito, 3X ou mais";
+const FormarDePagamento = "debito";
 
 let Porcentagem = 0;
 let TotalAPagar = 0;
