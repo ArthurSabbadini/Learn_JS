@@ -4,6 +4,9 @@ uma POSICAO que pode ter qualquer valor positivo ou negativo, verifica se ela é
 corrigido entre 0 e 100.
 */
 
+
+/* ao usuario digitar um numero maior que 0 a função exibe uma mensagem e ao digitar um maior que 100 ela exibe
+outra mensagem e ajusta para o tamanho limite */
 function limitaPosicao(posicao) {
     if (posicao < 0) {
         return '0 Você passou do limite permitido, ajustamos o tamanho';
