@@ -4,6 +4,8 @@ Faça uma função que receba 2 parâmetros, 'dano' e 'saude'. A função deve r
 o dano for matar o personagem (ou seja, deixar sua saúde menor ou igual a zero) e '0' caso contrário.
 */
 
+
+//função que recebe 2 parâmetros e retorna 1 se dano for suficiente para matar e 0 se não for
 function personagem(dano, saude) {
     if (dano >= saude) {
         return 'Personagem morreu (codigo de morte é) ' + 1;
@@ -12,5 +14,6 @@ function personagem(dano, saude) {
     }
   }
 
+// Uso da função
 console.log (personagem(100, 100));
 
