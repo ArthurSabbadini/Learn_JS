@@ -1,2 +1,2 @@
-# Learn_Dio
-Plataforma Dio, curso
+# Learn_JS
+Exercicios basícos em JS
