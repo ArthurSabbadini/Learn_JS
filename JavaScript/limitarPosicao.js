@@ -17,4 +17,5 @@ function limitaPosicao(posicao) {
     }
 }
 
+// Uso da função
 console.log(limitaPosicao(120))
