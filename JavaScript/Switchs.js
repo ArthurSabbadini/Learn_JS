@@ -1,4 +1,4 @@
-let dia = 3;
+let dia = 8;
 let nomeDia;
 
 switch (dia) {
@@ -24,7 +24,7 @@ switch (dia) {
     nomeDia = "Sábado";
     break;
   default:
-    nomeDia = "Dia inválido";
+    nomeDia = "Dia inválido, escreva somente de 1 a 7";
 }
 
 console.log("O dia correspondente ao número", dia, "é", nomeDia);
